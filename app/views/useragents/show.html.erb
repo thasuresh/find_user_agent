@@ -1,0 +1,12 @@
+<% title "Useragent" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @useragent.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_useragent_path(@useragent) %> |
+  <%= link_to "Destroy", @useragent, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", useragents_path %>
+</p>
